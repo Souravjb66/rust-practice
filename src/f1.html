@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a1{
+            color:yellow;
+        }
+        #a2{
+            color:blue;
+        }
+        #button1{
+            color:red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="a1">hello world</h1>
+    <h1 id="a2"></h1>
+    <button id="button1">click</button>
+    <script>
+        document.getElementById("a2").innerHTML="new world";
+        let a=window.document.getElementById("a2").innerHTML;
+        console.log(a);
+        let b=window.document.getElementById("a2").style.color="red";
+        console.log(b);
+        document.getElementById("button1").addEventListener("click",click);
+        let arr=["red","green","blue"];
+        let count=0;
+
+        function click(){
+            if(count>=3){
+                count=0;
+            }
+            document.getElementById("a1").style.color=arr[count];
+            count=count+1;
+        }
+        
+        
+        
+    </script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 pub mod traits;
+mod modules;
 
 fn main() {
     println!("Hello, function");
